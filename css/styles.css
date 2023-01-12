@@ -1,0 +1,162 @@
+:root {
+    --primary-brand-color: #4D5AE5;
+    /* CTAs Focused Active states Links - Призывы к действию Сфокусированные активные состояния Ссылки */
+    --pressed-state-color: #404BBF;
+    /* CTAs - Призывы к действию  */
+    --dark-color: #2E2F42;
+    /* Overlays Shadows Headings - Наложения Тени Заголовки - bgc footer*/
+    --success-color: #31D0AA;
+    /* Valid fields Success messages    - Допустимые поля Сообщения об успехе*/
+    --text-color: #434455;
+    /* Body text    - Основной текст*/
+    --subtle-text-color: #8E8F99;
+    /* Helper text Deemphasized text    - Вспомогательный текст Текст без выделения */
+    --accent-color: #E7E9FC;
+    /* Accent color Hairlines Subtle backgrounds    - Акцентный цвет Линии волос Тонкий фон */
+    --light-color: #F4F4FD;
+    /* Light mode backgrounds Light mode Dialogs/alerts     - Фоны светлого режима Светлый режим Диалоги/оповещения  -  bgc Our Team */
+    --modal-overlay-color: #E7E9FC;
+    /* Overlay  - Наложение*/
+    --hero-background-color: #2E2F42;
+    /* Hero image background    - Фон изображения героя */
+   --hero-text: #fff;
+   /* текст Hero, BGC Body */
+}
+
+ul { 
+    list-style-type: none;
+    /* удаляем в списках маркера */
+}
+
+body {
+    background-color: var(--hero-text);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    /* устанавливаем основной фон, цвет и вид шрифта для всей страницы  */
+}
+
+.logo, 
+.address a, 
+.nav-list a {
+    text-decoration: none;
+    font-style: normal;
+    /* удаляем подчеркивание и курсив в навигации */
+}
+
+.nav,
+.nav-list a,
+.logo-second {
+    color: var(--dark-color);
+    /* устанавливаем цвет шрифта для навигации и второй части лого */
+}
+
+.logo {
+    color: var(--primary-brand-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    /* устанавливаем параметры шрифта для лого и цвет для первой части лого */
+}
+
+.footer {
+    background-color: var(--dark-color);
+    color: var(--modal-overlay-color);
+    /* устанавливаем фон и цвет шрифта футера */
+}
+
+.footer .logo-second {
+    color: var(--light-color);
+    /* изменяем цвет шрифта второй части лого в футере */
+}
+
+.hero {
+    background-color: var(--hero-background-color);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    color: var(--hero-text);
+    /* устанавливаем параметры шрифта и фон для сектора Hero */
+}
+
+.hero-button {
+    background: var(--primary-brand-color);
+    /* устанавливем цвет фона кнопки в спокойном состоянии */
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: var(--pressed-state-color);
+    /* устанавливем цвет фона кнопки при наведении */
+} 
+
+.hero-button, 
+.nav-list a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    /* устанавливем цвет шрифта кнопки и меню навигации */
+}
+
+.feature h3, 
+.worker h3 {
+    color: var(--dark-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    /* устанавливем цвет и параметны шрифта заголовков сектора Feature и Our Team */
+}
+
+.feature h2 {
+    opacity: 0;
+    /* скрываем название сектора Feature */
+}
+
+.feature p, 
+.worker p, 
+.address a {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    /* устанавливем цвет и параметры шрифта параграфов в секторах Feature и Our Team, а также строках адреса в навигации  */
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.address a:hover,
+.address a:focus {
+    color: var(--pressed-state-color);
+    /* устанавливем цвет фона ссылок навигации и адреса при наведении */
+}
+
+.work, 
+.worker {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-color);
+    /* устанавливаем цвет и пареметры шрифта в секторах What are we doing и Our Team */
+}
+
+.worker {
+    background-color: var(--light-color);
+    /* устанавливаем цвет фона в секторе Our Team */
+}
+
+.worker li {
+    background-color: var(--hero-text);
+    /* устанавливаем цвет фона для фотографий сотрудников в секторе Our Team */
+}
+
+.worker li p {
+    color: var(--text-color);
+    /* устанавливаем цвет шрифта для должности сотрудников */
+}
+
