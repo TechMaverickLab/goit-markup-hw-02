@@ -90,7 +90,7 @@ body {
 .hero-button:active,
 .hero-button:focus {
     background: var(--pressed-state-color);
-    /* устанавливем цвет фона кнопки при наведении */
+    /* устанавливем цвет фона кнопки при наведении Tab и при нажатии мышкой */
 } 
 
 .hero-button, 
@@ -131,7 +131,7 @@ body {
 .address a:hover,
 .address a:focus {
     color: var(--pressed-state-color);
-    /* устанавливем цвет фона ссылок навигации и адреса при наведении */
+    /* устанавливем цвет фона ссылок навигации и адреса при наведении Tab и мышкой*/
 }
 
 .work, 
@@ -180,6 +180,7 @@ body {
     color: var(--hero-text);
     background: var(--pressed-state-color);
 }
+/* устанавливем цвет фона ссылок навигации и адреса при наведении Tab и мышкой*/
 
 .portfolio-list h2 {
     font-weight: 500;
@@ -188,6 +189,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--dark-color);
 }
+ /* устанавливаем цвет и пареметры шрифта в заголовках сектора Portfolio*/
 
 .portfolio-list p {
     font-size: 16px;
@@ -195,3 +197,4 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
+/* устанавливаем цвет и пареметры шрифта в тексте сектора Portfolio*/
