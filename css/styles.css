@@ -32,20 +32,36 @@ body {
     background-color: var(--hero-text);
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
+    letter-spacing: 0.02em;
     /* устанавливаем основной фон, цвет и вид шрифта для всей страницы  */
 }
+ 
 
-.logo, 
-.address a, 
-.nav-list a {
+a {
+    color: inherit;
+    font-size: 16px;
+    line-height: 1.5;
     text-decoration: none;
     font-style: normal;
-    /* удаляем подчеркивание и курсив в навигации */
+}
+/* устанавливем шрифт, удаляем подчеркивание и курсив в ссылок */
+
+.nav-list a {
+    font-weight: 500;
+
+    /* устанавливем шрифт меню навигации */
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.address a:hover,
+.address a:focus {
+    color: var(--pressed-state-color);
+    /* устанавливем цвет фона ссылок навигации и адреса при наведении Tab и мышкой*/
 }
 
 .nav,
-.nav-list a,
-.logo-second {
+.nav-list a {
     color: var(--dark-color);
     /* устанавливаем цвет шрифта для навигации и второй части лого */
 }
@@ -56,8 +72,13 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     /* устанавливаем параметры шрифта для лого и цвет для первой части лого */
+}
+.logo-second {
+    color: var(--dark-color);
+    /* устанавливаем цвет шрифта для второй части лого */
 }
 
 .footer {
@@ -81,57 +102,28 @@ body {
     /* устанавливаем параметры шрифта и фон для сектора Hero */
 }
 
-.hero-button {
-    background: var(--primary-brand-color);
-    color: var(--hero-text);
-    /* устанавливем цвет фона кнопки в спокойном состоянии */
-}
-
 .hero-button:active,
 .hero-button:focus {
     background: var(--pressed-state-color);
     /* устанавливем цвет фона кнопки при наведении Tab и при нажатии мышкой */
 } 
 
-.hero-button, 
-.nav-list a {
+.hero-button {
+    background: var(--primary-brand-color);
+    color: var(--hero-text);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: 0.04em;
     /* устанавливем цвет шрифта кнопки и меню навигации */
-}
+    }
 
-.feature h3, 
-.worker h3 {
-    color: var(--dark-color);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    /* устанавливем цвет и параметны шрифта заголовков сектора Feature и Our Team */
-}
-
-.feature h2 {
-    opacity: 0;
-    /* скрываем название сектора Feature */
-}
-
-.feature p, 
-.worker p, 
-.address a {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-    /* устанавливем цвет и параметры шрифта параграфов в секторах Feature и Our Team, а также строках адреса в навигации  */
-}
-
-.nav-list a:hover,
-.nav-list a:focus,
-.address a:hover,
-.address a:focus {
-    color: var(--pressed-state-color);
-    /* устанавливем цвет фона ссылок навигации и адреса при наведении Tab и мышкой*/
+.feature,
+.portfolio {
+    color: rgba(0, 0, 255, 0);
+    ;
+    /* скрываем название секторов Feature и Portfolio*/
 }
 
 .work, 
@@ -140,7 +132,6 @@ body {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
-    letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--dark-color);
     /* устанавливаем цвет и пареметры шрифта в секторах What are we doing и Our Team */
@@ -151,23 +142,16 @@ body {
     /* устанавливаем цвет фона в секторе Our Team */
 }
 
-.worker li {
+.worker-list {
     background-color: var(--hero-text);
     /* устанавливаем цвет фона для фотографий сотрудников в секторе Our Team */
-}
-
-.worker li p {
-    color: var(--text-color);
-    /* устанавливаем цвет шрифта для должности сотрудников */
 }
 
 .filters-list {
     font-weight: 500;
     font-size: 16px;
+    font-family: inherit;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
     color: var(--primary-brand-color);
     background: var(--light-color);
@@ -182,19 +166,21 @@ body {
 }
 /* устанавливем цвет фона ссылок навигации и адреса при наведении Tab и мышкой*/
 
-.portfolio-list h2 {
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+/* устанавливаем цвет и пареметры шрифта в тексте параграфов*/
+
+.footer p {
+    color: var(--modal-overlay-color);
+}
+
+h3 {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--dark-color);
+    color: var(--dark-color)
 }
- /* устанавливаем цвет и пареметры шрифта в заголовках сектора Portfolio*/
-
-.portfolio-list p {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-}
-/* устанавливаем цвет и пареметры шрифта в тексте сектора Portfolio*/
+/* устанавливаем цвет и пареметры шрифта в тексте h3*/
