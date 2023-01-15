@@ -83,10 +83,11 @@ body {
 
 .hero-button {
     background: var(--primary-brand-color);
+    color: var(--hero-text);
     /* устанавливем цвет фона кнопки в спокойном состоянии */
 }
 
-.hero-button:hover,
+.hero-button:active,
 .hero-button:focus {
     background: var(--pressed-state-color);
     /* устанавливем цвет фона кнопки при наведении */
@@ -160,3 +161,37 @@ body {
     /* устанавливаем цвет шрифта для должности сотрудников */
 }
 
+.filters-list {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--primary-brand-color);
+    background: var(--light-color);
+    cursor: pointer;
+/* устанавливем цвет и параметры шрифта кнопок в неактивном состоянии  */
+}
+
+.filters-list:hover,
+.filters-list:focus {
+    color: var(--hero-text);
+    background: var(--pressed-state-color);
+}
+
+.portfolio-list h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
+
+.portfolio-list p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
