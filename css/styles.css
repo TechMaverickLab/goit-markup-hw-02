@@ -95,7 +95,6 @@ body {
 
 .hero-headline {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -108,7 +107,6 @@ body {
 }
 /* устанавливаем фон для сектора Hero */
 
-.hero-button:active,
 .hero-button:hover,
 .hero-button:focus {
     background: var(--pressed-state-color);
